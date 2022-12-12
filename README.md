@@ -1,40 +1,33 @@
 # LeonCallum
 
 
-· het idee is om lingo na te maken maar dan in het thema van het gamemuseum
+· het idee is om whake a mole na te maken maar dan in het thema van het gamemuseum
 
 
 Korte uitleg game idee
 
-· je klikt op start en dan moet je typen om het woord te raden
+· je klikt op start en dan moet je de mollen rammen
 
-· het is een soort van lingo spel
+- de speler wint zodra hij/zij de mollen een zoveel aantal keer geraakt heeft
 
-- de speler wint zodra hij/zij het woord heeft geraden
+- je verliest al heb je na een bepaalde tijd niet genoeg mollen heeft geraakt
 
-- je verliest al heb je na een aantal keer raden het woord nog steeds niet goed
+- je krijgt 9 zwarte cirkels te zien
 
-- er zijn 6 verschillende rondes je begint makkelijk met 5 vlakjes het word steeds moeilijker bij de 3e ronde krijg je 6 letter woorden en bij de 5e ronde 7 letter woorden
+- elke paar seconde komt er een mol uit een van de 9 gaten
 
-- bij elke ronde moet je het woord raden dat aan het begin van de ronde random is uitgekozen
+- jou taak is om de mol met je hamer te raken(erop klikken)
 
-- elke ronde krijg je de eerste letter van het woord al te weten
+- de mol blijft er een hele korte tijd
 
-- als het woord fout is krijg je te zien of een letter van jou geraden woord in dat random woord zit (dan kleurt het vlakje geel) en als het een goede letter is EN het staat op dezelfde plek kleurt die rood
+- elke mol die je raakt is 10 punten
 
-- als je het woord raad binnen de tijd krijg je een punt en ga je door naar de volgende ronden
+- en er kunnen ook bommen uit de gaten komen
 
-- als je het woord niet raad binnen de tijd krijg je GEEN punt maar ga je wel door naar de volgende ronde
+- als je die raakt verlies je GELIJK
 
-- het doel is om alle 6 rondes goed  te raden
 
-(ik weet niet of we het grabbel systeem kunnen maken)
 
-- aan het einde kun je het aantal punten inzetten om te grabbelen naar een nummer
-
-- je krijgt dan een lijst van 5x5 aantal letters waar een paar van zijn gekleurd en de rest niet
-
-- als je op die lijst 5 op een rij (horizontaal verticaal en diagonaal) krijgt win je het spel
 
 
 
