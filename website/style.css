@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{  
+  
+
+}
+
+.titel{
+    width: 100%;
+    height: 100px;
+    background: #3E3D49;
+}
+.logo{
+    height: 100px;
+}
+
+main{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    background: white;
+    
+
+}
+.uitleg{
+    display:flex ;
+    background: #D1D3E0;
+    flex-direction: row;
+
+}
+
+p{
+   font-size: 50px;
+}
+
+.test{
+    padding: 20px;
+    height: 100px;
+}
+
+
