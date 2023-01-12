@@ -5,8 +5,16 @@
 }
 
 .body{  
+<<<<<<< HEAD
   margin-top: 10px;
 
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3E3D49;
+  height: 200%;
+>>>>>>> 40c32bc1e0badeabb9ef3770694a8db08bc480d9
 }
 
 .titel{
@@ -22,24 +30,34 @@ main{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
-    background: white;
+    background: #3E3D49;
     
 
 }
 .uitleg{
-    display:flex ;
+    position: relative;
     background: #D1D3E0;
     flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
 
 }
 
-p{
-   font-size: 50px;
+.uitlegtitle{
+    position: absolute;
+    top: 0;
+    font-size: 45px;
+} 
+
+.uitlegtext{
+   font-size: 25px;
 }
 
 .test{
     padding: 20px;
-    height: 100px;
+    object-fit: contain;
 }
-
-
