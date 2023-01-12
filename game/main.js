@@ -12,7 +12,7 @@ function run(){
     const i = Math.floor(Math.random() * holes.length)
     const hole = holes[i]
     let timer = null
-
+    
     const img = document.createElement('img')
     img.classList.add('mole')
     img.src = 'assets/mole2.jpg'
