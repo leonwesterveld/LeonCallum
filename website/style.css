@@ -5,11 +5,16 @@
 }
 
 .body{  
+<<<<<<< HEAD
+  margin-top: 10px;
+
+=======
   display: flex;
   justify-content: center;
   align-items: center;
   background: #3E3D49;
   height: 200%;
+>>>>>>> 40c32bc1e0badeabb9ef3770694a8db08bc480d9
 }
 
 .titel{
