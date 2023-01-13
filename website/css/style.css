@@ -1,0 +1,262 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 20px;
+    font-family: sans-serif;
+    background: #3E3D49;
+}
+
+header{
+    background: #272635;
+    color: rgb(255, 255, 255);
+    height: 120px;
+}
+
+.logo{
+    float: left;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+
+
+li > a{
+    color: white;
+    text-decoration:none;
+
+}
+
+nav{
+    width: 60vw;
+    height: 100%;
+    margin: 0 auto;
+}
+
+div{
+    display: flex;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+
+
+li:hover{
+    cursor: pointer;
+    
+}
+
+h1{
+    font-size: 250%;
+    margin: 5px;
+    border-bottom:2px solid rgb(0, 0, 0);
+}
+
+
+main{
+    height: 2300px;
+    width: 100%;
+    background: #454452;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 1px;
+    border-top: white 10px;
+}
+
+section{
+    width: 100%;
+    height: 407px;
+    background: #D1D3E0;
+    margin-top: 45px;
+
+}
+
+section1{
+    height: 702px;
+    width: 536px;
+    background: #D1D3E0;
+    margin-right: 109px;
+    margin-top: 109px;
+}
+
+section2{
+    height: 702px;
+    width: 536px;
+    background: #D1D3E0;
+    margin-right: 109px;
+    margin-top: 109px;
+}
+
+section3{
+    height: 702px;
+    width: 536px;
+    background: #D1D3E0;
+    margin-top: 109px;
+}
+
+section4{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(58, 129, 0);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 5px solid black;
+    width: 100%;
+    margin-top: 45px;
+    height: 50%;
+    
+}
+ 
+section4:hover{
+    cursor: url("assets/boris.jpg");
+}
+
+img:hover{
+    transform: scale(1.05);
+}
+
+p{
+    margin: 40px;
+}
+ 
+
+ 
+.top{
+    width: 80px;
+    height: 80px;
+    background: rgb(42, 40, 45);
+    border: none;
+    font-size: 150%;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5px;
+    color: white;
+    position: fixed;
+    bottom: 120px;
+    right: 120px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background: #272635;
+    color: rgb(255, 255, 255);
+    height: 1080px;
+    display:flex;
+    align-items: center;
+}
+
+footer > p{
+    width: 60vw;
+    margin: 0 auto;
+    padding-left: 40px;
+}
+
+.score{
+    font-size: 4em;
+    margin-bottom: .5em;
+}
+.board{
+    height: 600px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 80px;
+}
+.hole{
+    background-color: rgb(165, 85, 11);
+    border-radius: 50%;
+    box-shadow: inset 0 10px 0 7px rgb(53, 21, 6),
+                inset 0 20px 20px 15px rgba(0, 0, 0, .3),
+                0 0 5px rgba(0, 0, 0, .5);
+    position: relative;
+    overflow: hidden;
+}
+.hole .mole{
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    animation: rise .3s ease-out;
+}
+
+
+.cursor{
+    height: 110px;
+    width: 100px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-image: url('assets/boris.jpg');
+    background-size: 100% 100%;
+    transform: translate(-20%, -20%);
+    transition: transform .1s;
+    pointer-events: none;
+}
+.cursor.active{
+    transform: translate(-20%, -20%) rotate(-45deg);
+}
+
+@keyframes rise {
+    0%{
+        transform: translateX(-50%) translateY(100%);
+    }
+    100%{
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+
+
+@media screen and (max-width:1000px) {
+    footer > p{
+        width: 80vw;
+    }
+    section1{
+        display: block;
+    }
+    img:hover{
+        transform: none;
+    }
+    section4{
+        margin: 0px;
+        margin-top: 10px;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    body{
+        font-size: 16px;
+    } 
+    h1{
+        font-size: 180%;
+    }
+    footer > p{
+        width: 100vw;
+        padding-left: 20px;
+    }
+
+}
