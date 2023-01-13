@@ -21,11 +21,31 @@ function run(){
         score += 10
         sound.play()
         scoreEl.textContent = score
-        img.src = 'assets/mole-whacked.jpg'
+        img.src = 'assets/mole-whacked.png'
         clearTimeout(timer)
         setTimeout(() => {
             hole.removeChild(img)
             run()
+        }, 500)
+    })}
+    
+function run(){
+    const i = Math.floor(Math.random() * holes.length)
+    const hole = holes[i]
+    let timer = null
+        
+    const img = document.createElement('img')
+    img.classList.add('mole')
+    img.src = 'assets/bomb.png'
+    img.addEventListener('click', () =>{
+    score -= 10
+    sound.play()
+    scoreEl.textContent = score
+    img.src = 'assets.bomb.png'
+    clearTimeout(timer)
+    setTimeout(() =>{
+         hole.removeChild(img)
+        run()
         }, 500)
     })
 
