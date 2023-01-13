@@ -5,6 +5,7 @@ let canvas = document.getElementById("canvasid")
 const cursor = document.querySelector('.cursor')
 const holes = [...document.querySelectorAll('.hole')]
 const scoreEl = document.querySelector('.score span')
+const bomb = [document.querySelector('.bomb')]
 let score = 0
 const sound = new Audio("assets/smash.mp3")
 
@@ -15,19 +16,32 @@ function run(){
     
     const img = document.createElement('img')
     img.classList.add('mole')
-    img.src = 'assets/mole2.webp'
-
+    img.src = 'assets/mole2.jpg'
     img.addEventListener('click', () => {
         score += 10
         sound.play()
         scoreEl.textContent = score
-        img.src = 'assets/mole-whacked.jpg'
+        img.src = 'assets/mole-whacked.png'
+        clearTimeout(timer)
+        setTimeout(() => {
+        }, 500)
+    })
+ 
+    img.classList.add('bomb')
+    img.src = 'assets/bomb.png'
+    img.addEventListener('click', () => {
+        score -= 10
+        sound.play()
+        scoreEl.textContent = score
+        img.src = 'assets/explosion.webp'
         clearTimeout(timer)
         setTimeout(() => {
             hole.removeChild(img)
             run()
         }, 500)
     })
+    
+
 
     hole.appendChild(img)
 
