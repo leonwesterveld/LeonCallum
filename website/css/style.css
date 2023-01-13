@@ -27,7 +27,16 @@ header{
     width: 100px;
 }
 
-
+li{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 120px;
+    
+}
 
 li > a{
     color: white;
@@ -87,14 +96,20 @@ section{
 
 }
 
-section1 > im
-
 section1{
     height: 702px;
     width: 536px;
     background: #D1D3E0;
     margin-right: 109px;
     margin-top: 109px;
+}
+
+section1 > img{
+    width: 476px;
+    height: 262px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 section2{
@@ -105,11 +120,27 @@ section2{
     margin-top: 109px;
 }
 
+section2 > img{
+    width: 476px;
+    height: 262px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 section3{
     height: 702px;
     width: 536px;
     background: #D1D3E0;
     margin-top: 109px;
+}
+
+section3 > img{
+    width: 476px;
+    height: 262px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 section4{
@@ -127,14 +158,8 @@ section4{
     height: 50%;
     
 }
- 
-section4:hover{
-    cursor: url("assets/boris.jpg");
-}
 
-img:hover{
-    transform: scale(1.05);
-}
+
 
 p{
     margin: 40px;
