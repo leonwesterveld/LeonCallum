@@ -1,30 +1,53 @@
+let canvas = document.getElementById("canvasid")
+
+
+
 const cursor = document.querySelector('.cursor')
 const holes = [...document.querySelectorAll('.hole')]
 const scoreEl = document.querySelector('.score span')
+const bomb = [document.querySelector('.bomb')]
 let score = 0
-
 const sound = new Audio("assets/smash.mp3")
+const bombsound =  new Audio ("assets/hq-explosion-6288.mp3")
 
 function run(){
     const i = Math.floor(Math.random() * holes.length)
     const hole = holes[i]
     let timer = null
+    
 
-    const img = document.createElement('img')
-    img.classList.add('mole')
-    img.src = 'assets/mole.png'
-
-    img.addEventListener('click', () => {
-        score += 10
-        sound.play()
-        scoreEl.textContent = score
-        img.src = 'assets/mole-whacked.png'
-        clearTimeout(timer)
-        setTimeout(() => {
-            hole.removeChild(img)
-            run()
+  
+        const img = document.createElement('img')/* don't go in the same hole as the bomb*/
+        img.classList.add('mole') 
+        img.src = 'assets/mole.png'
+        img.addEventListener('click', () => {
+            score += 10
+            sound.play()
+            scoreEl.textContent = score
+            img.src = 'assets/mole-whacked.png'
+            clearTimeout(timer)
+            setTimeout(() => {
         }, 500)
+    })                       
+    
+
+
+        img.classList.add('bomb')
+        img.src = 'assets/bomb.png'
+        img.addEventListener('click', () => {
+            score -= 10
+            bombsound.play()
+            scoreEl.textContent = score
+            img.src = 'assets/explosion.webp'
+            clearTimeout(timer)
+            setTimeout(() => {
+                hole.removeChild(img)
+                run()
+            }, 500)
     })
+}
+    
+
 
     hole.appendChild(img)
 
@@ -32,7 +55,7 @@ function run(){
         hole.removeChild(img)
         run()
     }, 1500)
-}
+
 run()
 
 window.addEventListener('mousemove', e => {
