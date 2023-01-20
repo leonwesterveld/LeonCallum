@@ -52,10 +52,6 @@ nav{
     margin: 0 auto;
 }
 
-div{
-    display: flex;
-}
-
 ul{
     display: flex;
     list-style: none;
@@ -66,222 +62,161 @@ ul{
     gap: 20px;
 }
 
-
-
 li:hover{
     cursor: pointer;
     
 }
 
 main{
-    height: 2300px;
+    height: auto;
     width: 100%;
     background: #454452;
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-top: 1px;
-    border-top: white 10px;
-}
-
-.geschiedenis{
-    height: 2025px;
-    background-image: linear-gradient(rgba(15, 4, 67, 0.547), rgba(15, 4, 67, 0.547)), url("https://i.pinimg.com/originals/86/a6/08/86a608e4be2a6ffe64cfcabb4691b0d0.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+    padding: 3rem;
 }
 
 
-section{
+
+
+
+
+
+
+
+#section1{
     width: 100%;
     height: 407px;
+    display: flex;
     background: #D1D3E0;
-    margin-top: 45px;
-
+    padding: 2rem;
+    margin-bottom: 3rem;
 }
 
-.image{
-    width: 24vw;
-    height: 200px;
-    margin-top: 30px;
-    margin-left: 3vw;
-    margin-right: 3vw;
+#img2{
+    height: auto;
+    width: 100%;
+}
+
+.image1{
+    height: 100%;
+    width: auto;
 }
 
 h1{
     font-size: 250%;
     justify-content: center;
-    margin-top: 10px;
     margin-left: 45px;
     margin-right: 45px;
+    border-bottom: 2px solid rgb(75, 75, 75);
+}
+
+.informatie{
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    font-size: 33px;
+}
+
+
+
+
+
+
+
+
+
+#section2{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#colom1{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    background: #D1D3E0;
+    padding: 2rem;
+}
+
+#colom2{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    background: #D1D3E0;
+    padding: 2rem;
+    justify-content: center;
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+
+#colom3{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    background: #D1D3E0;
+    padding: 2rem;
+    justify-content: right;
+}
+
+#image2{
+    width: 100%;
+    height: 100%;
+}
+
+h2{
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
     padding-bottom: 10px;
     border-bottom: 2px solid rgb(75, 75, 75);
 }
 
 .info{
     margin-top: 20px;
-    margin-left: 40px;
-    margin-right: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
     margin-bottom: 40px;
-    font-size: 25px;
-}
-
-section1{
-    height: 700px;
-    width: 30vw;
-    margin-top: 30px;
-    justify-content: left;
-    background: #D1D3E0;
+    font-size: 24px;
 }
 
 
-section2{
-    height: 700px;
-    width: 30vw;
-    margin-top: 30px;
-    margin-right: 50px;
-    margin-left: 50px;
-    justify-content: center;
-    background: #D1D3E0;
-}
 
-section3{
-    height: 700px;
-    width: 30vw;
-    margin-top: 30px;
-    background: #D1D3E0;
-    justify-content: right;
-}
 
-section4{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(21, 82, 104);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border: 5px solid black;
-    width: 100%;
-    margin-top: 45px;
-    height: 50%;
-    
-}
 
-.top{
-    width: 80px;
-    height: 80px;
-    background: rgb(42, 40, 45);
-    border: none;
-    font-size: 150%;
-    font-family: 'Open Sans', sans-serif;
-    border-radius: 5px;
-    color: white;
-    position: fixed;
-    bottom: 120px;
-    right: 120px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 footer{
     background: #272635;
     color: rgb(255, 255, 255);
-    height: 1080px;
+    height: 720px;
     display:flex;
     align-items: center;
 }
 
-footer > p{
-    width: 60vw;
-    margin: 0 auto;
-    padding-left: 40px;
-}
 
-*{
-    margin: 0;
-    padding: 0;
-}
 
-section4{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(58, 129, 0);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-.score{
-    font-size: 4em;
-    margin-bottom: .5em;
-}
-.board{
-    height: 600px;
-    width: 600px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 80px;
-}
-.hole{
-    background-color: rgb(165, 85, 11);
-    border-radius: 50%;
-    box-shadow: inset 0 10px 0 7px rgb(53, 21, 6),
-                inset 0 20px 20px 15px rgba(0, 0, 0, .3),
-                0 0 5px rgba(0, 0, 0, .5);
-    position: relative;
-    overflow: hidden;
-}
-.hole .mole{
-    width: 70%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-    animation: rise .3s ease-out;
-}
-@keyframes rise {
-    0%{
-        transform: translateX(-50%) translateY(100%);
+
+
+
+
+
+@media screen and (max-width:192000px) {
+    footer > p{
+        width: 80vw;
     }
-    100%{
-        transform: translateX(-50%) translateY(0);
+    section1{
+        display: block;
     }
-}
-
-.cursor{
-    height: 110px;
-    width: 100px;
-    position: absolute;
-    top: 100px;
-    left: 100px;
-    background-image: url('assets/hammer.png');
-    background-size: 100% 100%;
-    transform: translate(-20%, -20%);
-    transition: transform .1s;
-    pointer-events: none;
-}
-
-
-.cursor.active{
-    transform: translate(-20%, -20%) rotate(-45deg);
-}
-
-@keyframes rise {
-    0%{
-        transform: translateX(-50%) translateY(100%);
+    img:hover{
+        transform: none;
     }
-    100%{
-        transform: translateX(-50%) translateY(0);
+    section4{
+        margin: 0px;
+        margin-top: 10px;
     }
+    
 }
-
-
 
 @media screen and (max-width:1000px) {
     footer > p{
@@ -313,3 +248,124 @@ section4{
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#game{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(21, 82, 104);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 5px solid black;
+    width: 100%;
+    margin-top: 3rem;
+    height: 50%;
+}
+
+.score{
+    font-size: 4em;
+    margin-bottom: .5em;
+}
+
+.board{
+    height: 600px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 80px;
+    padding-bottom: 3rem;
+}
+
+.hole{
+    background-color: rgb(165, 85, 11);
+    border-radius: 50%;
+    box-shadow: inset 0 10px 0 7px rgb(53, 21, 6),
+                inset 0 20px 20px 15px rgba(0, 0, 0, .3),
+                0 0 5px rgba(0, 0, 0, .5);
+    position: relative;
+    overflow: hidden;
+}
+
+.hole .mole{
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    animation: rise .3s ease-out;
+}
+
+@keyframes rise {
+    0%{
+        transform: translateX(-50%) translateY(100%);
+    }
+    100%{
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.cursor{
+    height: 110px;
+    width: 100px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-image: url('assets/hammer.png');
+    background-size: 100% 100%;
+    transform: translate(-20%, -20%);
+    transition: transform .1s;
+    pointer-events: none;
+}
+
+.cursor.active{
+    transform: translate(-20%, -20%) rotate(-45deg);
+}
+
+@keyframes rise {
+    0%{
+        transform: translateX(-50%) translateY(100%);
+    }
+    100%{
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
