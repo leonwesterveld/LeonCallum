@@ -8,22 +8,12 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-    font-size: 20px;
-    font-family: sans-serif;
-    background: #3E3D49;
-}
-
-main{
-    height: auto;
-    width: 100%;
-    background: #454452;
-    padding: 3rem;
-}
 
 
 
-/* || Header */
+
+/* || Header 
+  --------------------------------------------- */
 
 header{
     background: #272635;
@@ -83,13 +73,26 @@ li:hover{
 
 
 
+#bodyIndex{
+    font-size: 20px;
+    font-family: sans-serif;
+    background: #3E3D49;
+}
+
+#index{
+    height: auto;
+    width: 100%;
+    background: #454452;
+    padding: 3rem;
+}
 
 
 
 
 
 
-/* Sectie 1 */
+/* Sectie 1 
+  --------------------------------------------- */
 
 #section1{
     width: 100%;
@@ -134,7 +137,8 @@ h1{
 
 
 
-/* sectie 2 */
+/* sectie 2 
+  --------------------------------------------- */
 
 #section2{
     width: 100%;
@@ -196,178 +200,74 @@ h2{
 
 
 
-/* Parallax base styles
-  --------------------------------------------- */
-
-  main, footer{
-    height: 500px; /* fallback for older browsers */
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-perspective: 300px;
-    perspective: 300px;
-  }
-
-  .parallax {
-    height: 500px; /* fallback for older browsers */
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-perspective: 300px;
-    perspective: 300px;
-  }
-
-  .parallax__group {
-    position: relative;
-    height: 500px; /* fallback for older browsers */
-    height: 100vh;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-  }
-
-  .parallax__layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
-  .parallax__layer--fore {
-    -webkit-transform: translateZ(90px) scale(.7);
-    transform: translateZ(90px) scale(.7);
-    z-index: 1;
-  }
-
-  .parallax__layer--base {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    z-index: 4;
-  }
-
-  .parallax__layer--back {
-    -webkit-transform: translateZ(-300px) scale(2);
-    transform: translateZ(-300px) scale(2);
-    z-index: 3;
-  }
-
-  .parallax__layer--deep {
-    -webkit-transform: translateZ(-600px) scale(3);
-    transform: translateZ(-600px) scale(3);
-    z-index: 2;
-  }
 
 
-  /* demo styles
-  --------------------------------------------- */
 
-  body, html {
-    overflow: hidden;
-  }
 
-  body {
-    font: 100% / 1.5 Arial;
-  }
-
-  * {
-    margin:0;
-    padding:0;
-  }
-
-  .parallax {
-    font-size: 200%;
-  }
-
-   /* centre the content in the parallax layers */
-  .title {
+/* Geschiedenis */
+#bodygeschiedenis{
+    font-size: 20px;
+    font-family: sans-serif;
+    background-size: cover;
     text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 20vw;
-    height: 20vw;
-    flex-direction: column;
+    background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url(https://i.pinimg.com/564x/9b/bc/90/9bbc902053250e7a86d17902ba65ab4e.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#geschiedenis{
+    height: auto;
+    width: 100%;
+    padding: 3rem;
+    scroll-timeline: slow;
+}
+
+#GSection1{
+    width: 30rem;
+    height: 30rem;
+    display: flex;
     background: #D1D3E0;
     padding: 2rem;
-  }
+    margin-bottom: 3rem;
+    margin-left: 10vw;
+}
 
-  .titles {
-    color: white;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
+#GSection2{
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    background: #D1D3E0;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 55vw;
+}
 
+#GSection3{
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    background: #D1D3E0;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 10vw;
+}
 
-  /* style the groups
-  --------------------------------------------- */
-
-  #group1 {
-    z-index: 5; /* slide over group 2 */
-  }
-  #group1 .parallax__layer--base {
-    background-image: url(https://thereader.mitpress.mit.edu/wp-content/uploads/2020/11/pacman-lead-graphic-700x420.jpg);
-    background-size: cover;
-  }
-
-  #group2 {
-    z-index: 3; /* slide under groups 1 and 3 */
-  }
-  #group2 .parallax__layer--back {
-    background-image: url(https://as1.ftcdn.net/v2/jpg/03/06/59/52/1000_F_306595210_sTtKiI1G7Ulo8q3OfAXpKvMrDXOEb8eJ.jpg);
-    background-size: cover;
-  }
-
-  #group3 {
-    z-index: 4; /* slide over group 2 and 4 */
-  }
-  #group3 .parallax__layer--base {
-    background-image: url(https://www.siliconindia.com/news/newsimages/special/y7xs21Jh.jpeg);
-    background-size: cover;
-  }
-
-  #group4 {
-    z-index: 2; /* slide under group 3 and 5 */
-  }
-  #group4 .parallax__layer--deep {
-    background-image: url(https://www.svg.com/img/gallery/sonic-the-hedgehogs-first-home-console-appearance-you-probably-missed-upgrade/a-new-mascot-awaits-1512057692.jpg);
-    background-size: cover;
-  }
-
-  #group5 {
-    z-index: 3; /* slide over group 4 and 6 */
-  }
-  #group5 .parallax__layer--base {
-    background-image: url(https://i.pinimg.com/564x/9b/bc/90/9bbc902053250e7a86d17902ba65ab4e.jpg);
-    background-size: cover;
-  }
-
-  #group6 {
-    z-index: 2; /* slide under group 5 and 7 */
-  }
-  #group6 .parallax__layer--back {
-    background-image: url(https://i0.wp.com/tiredoldhack.com/wp-content/uploads/2018/05/01-sf1.png?ssl=1);
-    background-size: cover;
-  }
-
-  #group7 {
-    z-index: 3; /* slide over group 7 */
-  }
-  #group7 .parallax__layer--base {
-    background-image: url(https://cdn.pastemagazine.com/www/articles/2021/05/26/1981_games.jpg);
-    background-size: cover;
-  }
+#GSection4{
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    background: #D1D3E0;
+    padding: 2rem;
+    margin-left: 55vw;
+}
 
 
 
 
-
-
+/* … */
 
 
 
@@ -390,7 +290,8 @@ footer{
 
 
 
-/* grote */
+/* grote 
+  --------------------------------------------- */
 
 @media screen and (max-width:1920px) {
     footer > p{
@@ -451,7 +352,8 @@ footer{
 
 
 
-/* Game */
+/* Game 
+  --------------------------------------------- */
 
 #game{
     font-family: Arial, Helvetica, sans-serif;
