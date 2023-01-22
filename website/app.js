@@ -1,61 +1,38 @@
-let canvas = document.getElementById("canvasid")
-
-
-
+let canvas = document.getElementById('canvasID')
 const cursor = document.querySelector('.cursor')
 const holes = [...document.querySelectorAll('.hole')]
 const scoreEl = document.querySelector('.score span')
-const bomb = [document.querySelector('.bomb')]
+this.Images = [];
 let score = 0
+
 const sound = new Audio("assets/smash.mp3")
-const bombsound =  new Audio ("assets/hq-explosion-6288.mp3")
 
 function run(){
     const i = Math.floor(Math.random() * holes.length)
     const hole = holes[i]
     let timer = null
+    let sources = ["mole.png"]
+    let scope = this;
+    let loaded = 0;
+    for (let i = 0; i < sources.length; i++)
+    {
+        let img = new Image();
+
+        img.onload(function () {
+            loaded++; 
+            if (loaded == sources.length)
+            {
+                sources.length == hole
+            }
+        })
+        img.src = sources[i];
+        this.Images.push(img);
+    }
+
+   
+
     
-
-  
-        const img = document.createElement('img')/* don't go in the same hole as the bomb*/
-        img.classList.add('mole') 
-        img.src = 'assets/mole.png'
-        img.addEventListener('click', () => {
-            score += 10
-            sound.play()
-            scoreEl.textContent = score
-            img.src = 'assets/mole-whacked.png'
-            clearTimeout(timer)
-            setTimeout(() => {
-        }, 500)
-    })                       
-    
-
-
-        img.classList.add('bomb')
-        img.src = 'assets/bomb.png'
-        img.addEventListener('click', () => {
-            score -= 10
-            bombsound.play()
-            scoreEl.textContent = score
-            img.src = 'assets/explosion.webp'
-            clearTimeout(timer)
-            setTimeout(() => {
-                hole.removeChild(img)
-                run()
-            }, 500)
-    })
 }
-    
-
-
-    hole.appendChild(img)
-
-    timer = setTimeout(() => {
-        hole.removeChild(img)
-        run()
-    }, 1500)
-
 run()
 
 window.addEventListener('mousemove', e => {
@@ -68,3 +45,5 @@ window.addEventListener('mousedown', () => {
 window.addEventListener('mouseup', () => {
     cursor.classList.remove('active')
 })
+
+    
