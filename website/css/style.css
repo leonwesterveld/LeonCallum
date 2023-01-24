@@ -146,35 +146,31 @@ h1{
     display: flex;
 }
 
-#colom1{
+.colom1{
     width: 100%;
     height: auto;
     flex-direction: column;
     background: #D1D3E0;
-    padding: 2rem;
 }
 
-#colom2{
+.colom2{
     width: 100%;
     height: auto;
     flex-direction: column;
     background: #D1D3E0;
-    padding: 2rem;
-    justify-content: center;
-    margin-right: 3rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
-#colom3{
+.colom3{
     width: 100%;
     height: auto;
     flex-direction: column;
     background: #D1D3E0;
-    padding: 2rem;
-    justify-content: right;
 }
 
-#image2{
+
+.image2{
     width: 100%;
     height: 100%;
 }
@@ -220,7 +216,6 @@ h2{
     height: auto;
     width: 100%;
     padding: 3rem;
-    scroll-timeline: slow;
 }
 
 #GSection1{
@@ -282,6 +277,29 @@ footer{
     align-items: center;
 }
 
+/* … */
+
+
+
+
+
+/* reviews */
+#bodyreviews{
+    font-size: 20px;
+    font-family: sans-serif;
+    background-size: cover;
+    text-align: center;
+    background: #3E3D49;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#reviews{
+    height: auto;
+    width: 100%;
+    padding: 3rem;
+}
 /* … */
 
 
