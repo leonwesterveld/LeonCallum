@@ -446,7 +446,7 @@ footer{
 /* Game 
   --------------------------------------------- */
 
-#game{
+.game{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(21, 82, 104);
     color: #fff;
@@ -458,7 +458,7 @@ footer{
     border: 5px solid black;
     width: 100%;
     margin-top: 3rem;
-    height: 50%;
+    height: 100%;
 }
 
 .score{
