@@ -19,6 +19,21 @@ header{
     background: #272635;
     color: rgb(255, 255, 255);
     height: 120px;
+    display: flex;
+}
+
+.engels{
+    float: right;
+    margin: 5px;
+    height: 20px;
+    width: 25px;
+}
+
+.nederlands{
+    float: right;
+    margin: 5px;
+    height: 20px;
+    width: 25px;
 }
 
 .logo{
@@ -28,9 +43,7 @@ header{
     width: 100px;
 }
 
-li{
-    width: 100%;
-    height: 100%;
+.taal{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,6 +164,8 @@ h1{
     height: auto;
     flex-direction: column;
     background: #D1D3E0;
+    margin-right: 1rem;
+    padding: 1rem;
 }
 
 .colom2{
@@ -158,8 +173,9 @@ h1{
     height: auto;
     flex-direction: column;
     background: #D1D3E0;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
 }
 
 .colom3{
@@ -167,6 +183,8 @@ h1{
     height: auto;
     flex-direction: column;
     background: #D1D3E0;
+    margin-left: 1rem;
+    padding: 1rem;
 }
 
 
@@ -197,90 +215,24 @@ h2{
 
 
 
-
-
-
-/* Geschiedenis */
-#bodygeschiedenis{
+/* contact */
+#bodycontact{
     font-size: 20px;
     font-family: sans-serif;
     background-size: cover;
     text-align: center;
-    background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url(https://i.pinimg.com/564x/9b/bc/90/9bbc902053250e7a86d17902ba65ab4e.jpg);
+    background: #3E3D49;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-#geschiedenis{
+#contact{
     height: auto;
     width: 100%;
     padding: 3rem;
 }
-
-#GSection1{
-    width: 30rem;
-    height: 30rem;
-    display: flex;
-    background: #D1D3E0;
-    padding: 2rem;
-    margin-bottom: 3rem;
-    margin-left: 10vw;
-}
-
-#GSection2{
-    width: 30vw;
-    height: 30vw;
-    display: flex;
-    justify-content: center;
-    background: #D1D3E0;
-    padding: 2rem;
-    margin-bottom: 3rem;
-    margin-left: 55vw;
-}
-
-#GSection3{
-    width: 30vw;
-    height: 30vw;
-    display: flex;
-    justify-content: center;
-    background: #D1D3E0;
-    padding: 2rem;
-    margin-bottom: 3rem;
-    margin-left: 10vw;
-}
-
-#GSection4{
-    width: 30vw;
-    height: 30vw;
-    display: flex;
-    background: #D1D3E0;
-    padding: 2rem;
-    margin-left: 55vw;
-}
-
-
-
-
 /* … */
-
-
-
-
-/* footer */
-
-footer{
-    background: #272635;
-    color: rgb(255, 255, 255);
-    height: 720px;
-    display:flex;
-    align-items: center;
-}
-
-/* … */
-
-
-
 
 
 /* reviews */
@@ -301,6 +253,127 @@ footer{
     padding: 3rem;
 }
 /* … */
+
+
+/* tickets */
+#bodytickets{
+    font-size: 20px;
+    font-family: sans-serif;
+    background-size: cover;
+    text-align: center;
+    background: #3E3D49;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#tickets{
+    height: auto;
+    width: 100%;
+    padding: 3rem;
+}
+/* … */
+
+
+
+
+
+
+
+/* Geschiedenis */
+#bodygeschiedenis{
+    font-size: 20px;
+    font-family: sans-serif;
+    background-size: cover;
+    text-align: center;
+    background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url(https://i.pinimg.com/564x/9b/bc/90/9bbc902053250e7a86d17902ba65ab4e.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#geschiedenis{
+    height: auto;
+    width: 100%;
+}
+
+#GSectionleft{
+    margin-top: 3rem;
+    width: 30vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    background: #D1D3E0;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 10vw;
+}
+
+#GSectionright{
+    width: 30vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    background: #D1D3E0;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 60vw;
+}
+
+
+#GSection5{
+    width: 30vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    background: #D1D3E0;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 10vw;
+    margin-bottom: 3rem;
+}
+
+.geschiedenisinfo{
+    width: 100%;
+}
+
+.tekstgeschiedenis{
+    margin-top: 10px;
+    display: flex;
+    font-size: 10px;
+}
+
+h3{
+    font-size: 1vw;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(75, 75, 75);
+    width: 100%;
+    
+}
+
+
+
+
+/* … */
+
+
+
+
+/* footer */
+
+footer{
+    background: #272635;
+    color: rgb(255, 255, 255);
+    height: 500px;
+    display:flex;
+    align-items: center;
+}
+
+/* … */
+
+
+
+
 
 
 
