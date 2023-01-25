@@ -33,12 +33,12 @@
             <div id="tekst">
                     <h1>Nationaal Videogame Museum</h1>
                     <p class="informatie">
-                        Het Nationaal Videogame Museum is 'the place to be' voor iedereen 
-                        die meer wil weten (én beleven) over de geschiedenis, 
-                        maatschappelijke en culturele kant van videogames. 
-                        Het museum laat haar bezoekers ook de games van morgen ervaren. 
-                        Gamers van jong tot oud zijn welkom om te spelen, ontdekken, 
-                        leren en ervaringen online te delen.
+                       The National Video Game Museum is 'the place to be' for everyone
+                         who wants to know (and experience) more about history,
+                         social and cultural side of video games.
+                         The museum also lets its visitors experience the games of tomorrow.
+                         Gamers young and old are welcome to play, explore,
+                         learn and share experiences online.
                     </p>
                 </div>
             </div>
@@ -51,13 +51,13 @@
                     </div>
                     <div class="info">
                         <h2>Openings tijden</h2>
-                        <p class="info">Maandag Gesloten<br />
-                            Dinsdag Gesloten<br />
-                            Woensdag 10.00 - 18.00 uur<br />
-                            Donderdag 10.00 - 18.00 uur<br />
-                            Vrijdag 10.00 - 21.00 uur<br />
-                            Zaterdag 10.00 - 18.00 uur<br />
-                            Zondag 12.00 - 18.00 uur <br/>
+                        <p class="info">Monday Closed<br />
+                            Tuesday Closed<br />
+                            Wednesday 10am - 6pm<br />
+                            Thursday 10am - 6pm<br />
+                            Friday 10am - 9pm<br />
+                            Saturday 10am - 6pm<br />
+                            Sunday 12 noon - 6 pm <br/>
                         </p> 
                     </div>
             </div>
@@ -67,11 +67,11 @@
                         <img class="image2" src="img/retro.svg" alt="">
                     </div>
                     <div class="info">
-                        <h2>Geschiedenis</h2>
-                        <p class="info">Die werd in 2011 gevonden aan de Cobaltstraat in Zoetermeer. 
-                            Daar besloot Hasan om met 4 vrienden de locatie te huren 
-                            en kon het avontuur groeien tot een eigen ontmoetingsplek om hun hobby uit te oefenen 
-                            en lekker te ontspannen met een game.
+                        <h2>history</h2>
+                        <p class="info">It was found in 2011 on the Cobaltstraat in Zoetermeer.
+                            There Hasan decided to rent the location with 4 friends
+                            and the adventure could grow into their own meeting place to practice their hobby
+                            and relax with a game.
                         </p>
                     </div>
             </div>
@@ -81,61 +81,80 @@
                         <img class="image2" src="img/mapp.svg" alt="">
                     </div>
                     <div class="info">
-                        <h2>Locatie</h2>
-                        <p class="info">Het museum is gevestigd in het midden van de passage van Stadshart Zoetermeer, 
-                            op de eerste verdieping bovenaan de roltrap. Hier was voorheen de V&D gevestigd.
+                        <h2>location</h2>
+                        <p class="info">The museum is located in the middle of the passage of Stadshart Zoetermeer,
+                            on the first floor at the top of the escalator. The V&D used to be located here.
                          </p>
                     </div>
             </div>
         </div>
         
-        <div class="game" id= "game">
-            <canvas id="canvasID">
-                <h1 class="score">SCORE: <span>00</span></h1>
-                <div class="board">
-                    <div class="hole"></div>
-                    <div class="hole"></div>
-                    <div class="hole"></div>
-                    <div class="hole"></div>
-                    <div class="hole"></div>
-                    <div class="hole"></div>
-                    <div class="hole"></div>
-                    <div class="hole"></div>
-                    <div class="hole"></div>
-                </div>
-                <div class="cursor"></div>
-            </canvas>
+        <div class="game">
+            <style>
+                body{
+                    margin: 0;
+                    font-family: sans-serif;
+                }
+            </style>
+            <div 
+            style="
+            position: absolute; 
+            color: white; 
+            padding: 8px; 
+            font-size: 14px;
+            user-select: none;
+            " >
+                <span >score: <span id="scoreEl">0</span></span>
+            </div>
+        
+            <div id="modalEl"
+            style="
             
+            display: none;
+            position: absolute; 
+            background-color: white; 
+            top: 50%;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            padding: 16px;
+            max-width:500px ;
+            width: 	100%;
+            text-align: center;
+            border-radius: 5px;
+            ">
+                <label style="font-size:14px;color: gray;">game over</label>
+                <h1 id="modalScoreEl" style="font-size: 48px; margin-bottom:0 ; margin-top: 8px;">0</h1>
+                <p style="margin: 0; font-size:14px ; color: gray;">points</p>
+            </div>
+            <canvas id="canvasid"></canvas>
             
-        </div>
-
-
-
-
-
-
-
-
-
-
+                
+            </script>
 
 
     </main>
 
     <footer>
-        <p>Leon Westerveld
-            CONTACT</br>
-            Algemene vragen:</br>
+        <p>
+        
+            <br>
+           <p class="infoFooter"> info:</br>
+            <br>
+            info@nationaalvideogamemuseum.nl </p>
             </br>
-            info@nationaalvideogamemuseum.nl</br>
+           <p > Leon Westerveld
+         
+        </p>
             </br>
-            Pers:</br>
+           <p class="persFooter"> pers:</br>
+            
+            <br>
+            pers@nationaalvideogamemuseum.nl</br></p>
             </br>
-            pers@nationaalvideogamemuseum.nl</br>
+           <p class="zakelijkFooter"> Zakelijk:</br>
+            
             </br>
-            Zakelijk:</br>
-            </br>
-            zakelijk@nationaalvideogamemuseum.nl</br>
+            zakelijk@nationaalvideogamemuseum.nl</br></p>
 
 
         </p>
