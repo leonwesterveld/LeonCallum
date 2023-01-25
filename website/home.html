@@ -8,16 +8,16 @@
     <script src="app.js" defer></script>
     <title>LeonCallum</title>
 </head>
-<Body id="bodyIndex">
+<Body id="bodytickets">
     <header id="header">
         <img class="logo" src="img/logo.jpg" alt="">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Tickets.html">Tickets</a></li>
-                <li><a href="Geschiedenis.html">Geschiedenis</a></li>
-                <li><a href="contact.html">Contact & info</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="ticketsengels.html">Tickets</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="contactengels.html">Contact & info</a></li>
+                <li><a href="reviewsengels.html">Reviews</a></li>
             </ul>
         </nav>
         <li class="taal"><a class="top" href="home.html"><img class="engels" src="img/engels.svg" alt=""></a></li>
@@ -89,73 +89,53 @@
             </div>
         </div>
         
-        <div class="game">
-            <style>
-                body{
-                    margin: 0;
-                    font-family: sans-serif;
-                }
-            </style>
-            <div 
-            style="
-            position: absolute; 
-            color: white; 
-            padding: 8px; 
-            font-size: 14px;
-            user-select: none;
-            " >
-                <span >score: <span id="scoreEl">0</span></span>
-            </div>
-        
-            <div id="modalEl"
-            style="
-            
-            display: none;
-            position: absolute; 
-            background-color: white; 
-            top: 50%;
-            transform: translate(-50%,-50%);
-            left: 50%;
-            padding: 16px;
-            max-width:500px ;
-            width: 	100%;
-            text-align: center;
-            border-radius: 5px;
-            ">
-                <label style="font-size:14px;color: gray;">game over</label>
-                <h1 id="modalScoreEl" style="font-size: 48px; margin-bottom:0 ; margin-top: 8px;">0</h1>
-                <p style="margin: 0; font-size:14px ; color: gray;">points</p>
-            </div>
-            <canvas id="canvasid"></canvas>
-            
-                
-            </script>
+        <div class="game" id= "game">
+            <canvas id="canvasID">
+                <h1 class="score">SCORE: <span>00</span></h1>
+                <div class="board">
+                    <div class="hole"></div>
+                    <div class="hole"></div>
+                    <div class="hole"></div>
+                    <div class="hole"></div>
+                    <div class="hole"></div>
+                    <div class="hole"></div>
+                    <div class="hole"></div>
+                    <div class="hole"></div>
+                    <div class="hole"></div>
+                </div>
+                <div class="cursor"></div>
+            </canvas>
             
             
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
     </main>
 
     <footer>
-        <p>
-        
-            <br>
-           <p class="infoFooter"> info:</br>
-            <br>
-            info@nationaalvideogamemuseum.nl </p>
+        <p>Leon Westerveld
+            CONTACT</br>
+            Algemene vragen:</br>
             </br>
-           <p > Leon Westerveld
-         
-        </p>
+            info@nationaalvideogamemuseum.nl</br>
             </br>
-           <p class="persFooter"> pers:</br>
-            
-            <br>
-            pers@nationaalvideogamemuseum.nl</br></p>
+            Pers:</br>
             </br>
-           <p class="zakelijkFooter"> Zakelijk:</br>
-            
+            pers@nationaalvideogamemuseum.nl</br>
             </br>
-            zakelijk@nationaalvideogamemuseum.nl</br></p>
+            Zakelijk:</br>
+            </br>
+            zakelijk@nationaalvideogamemuseum.nl</br>
 
 
         </p>
