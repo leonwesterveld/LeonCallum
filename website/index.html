@@ -86,53 +86,73 @@
             </div>
         </div>
         
-        <div class="game" id= "game">
-            <canvas id="canvasID">
-                <h1 class="score">SCORE: <span>00</span></h1>
-                <div class="board">
-                    <div class="hole"></div>
-                    <div class="hole"></div>
-                    <div class="hole"></div>
-                    <div class="hole"></div>
-                    <div class="hole"></div>
-                    <div class="hole"></div>
-                    <div class="hole"></div>
-                    <div class="hole"></div>
-                    <div class="hole"></div>
-                </div>
-                <div class="cursor"></div>
-            </canvas>
+        <div class="game">
+            <style>
+                body{
+                    margin: 0;
+                    font-family: sans-serif;
+                }
+            </style>
+            <div 
+            style="
+            position: absolute; 
+            color: white; 
+            padding: 8px; 
+            font-size: 14px;
+            user-select: none;
+            " >
+                <span >score: <span id="scoreEl">0</span></span>
+            </div>
+        
+            <div id="modalEl"
+            style="
+            
+            display: none;
+            position: absolute; 
+            background-color: white; 
+            top: 50%;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            padding: 16px;
+            max-width:500px ;
+            width: 	100%;
+            text-align: center;
+            border-radius: 5px;
+            ">
+                <label style="font-size:14px;color: gray;">game over</label>
+                <h1 id="modalScoreEl" style="font-size: 48px; margin-bottom:0 ; margin-top: 8px;">0</h1>
+                <p style="margin: 0; font-size:14px ; color: gray;">points</p>
+            </div>
+            <canvas id="canvasid"></canvas>
+            
+                
+            </script>
             
             
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
     </main>
 
     <footer>
-        <p>Leon Westerveld
-            CONTACT</br>
-            Algemene vragen:</br>
+        <p>
+        
+            <br>
+           <p class="infoFooter"> info:</br>
+            <br>
+            info@nationaalvideogamemuseum.nl </p>
             </br>
-            info@nationaalvideogamemuseum.nl</br>
+           <p > Leon Westerveld
+         
+        </p>
             </br>
-            Pers:</br>
+           <p class="persFooter"> pers:</br>
+            
+            <br>
+            pers@nationaalvideogamemuseum.nl</br></p>
             </br>
-            pers@nationaalvideogamemuseum.nl</br>
+           <p class="zakelijkFooter"> Zakelijk:</br>
+            
             </br>
-            Zakelijk:</br>
-            </br>
-            zakelijk@nationaalvideogamemuseum.nl</br>
+            zakelijk@nationaalvideogamemuseum.nl</br></p>
 
 
         </p>
