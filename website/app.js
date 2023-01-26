@@ -2,6 +2,9 @@ const scoreEl = document.getElementById("scoreEl")
 const canvas = document.getElementById("canvasid")
 const modalEl = document.getElementById("modalEl")
 const modalScoreEl = document.getElementById("modalScoreEl")
+const buttonEl = document.getElementById("buttonEl")
+const startbuttonEl = document.getElementById("startbuttonEl")
+const startmodalEl = document.getElementById("startmodalEl")
 const c = canvas.getContext('2d')
 canvas.width = window.innerWidth
 canvas.height =window.innerHeight
@@ -100,13 +103,6 @@ class Particle{
 }
 
 
-const x = canvas.width / 2
-const y = canvas.height / 2
-
-const player =  new Player(x,y, 15, 'white')
-const projectiles = [];
-const enemies =[]
-const Particles=[]
 
 function spawnEnemies(){
     setInterval(() => {
@@ -142,8 +138,7 @@ function spawnEnemies(){
     }, 1000)
 }
 
-let animationId
-let score = 0
+
 function animate(){
     animationId = requestAnimationFrame(animate)
     c.fillStyle = 'rgba(0, 0, 0, 0.1)'
@@ -177,8 +172,7 @@ function animate(){
             cancelAnimationFrame(animationId)
             modalEl.style.visibility = 'visible'
             modalScoreEl.innerHTML = score
-        }
-            
+            }
 
         projectiles.forEach((projectile, projectileIndex) => {
         const dist = Math.hypot(projectile.x - enemy.x,
@@ -228,8 +222,8 @@ addEventListener('click', (event) =>
 {   
     
     const angle = Math.atan2(event.
-        offsetY - canvas.height / 2,
-        event.offsetX - canvas.width / 2
+        clientY - canvas.height / 2,
+        event.clientX - canvas.width / 2
 )
     const velocity = {
         x: Math.cos(angle) * 5, 
@@ -243,6 +237,47 @@ addEventListener('click', (event) =>
     )
 
   })
+
+
+  
+
+const x = canvas.width / 2
+const y = canvas.height / 2
+
+let player =  new Player(x,y, 15, 'white')
+let projectiles = [];
+let enemies =[]
+let Particles=[]
+let animationId;
+let score = 0
+
+
+
+function startGame()
+{
+     player =  new Player(x,y, 15, 'white')
+ projectiles = [];
+ enemies =[]
+ Particles=[]
+ animationId
+ score = 0
+
+modalEl.style.visibility = 'hidden'
+scoreEl.innerHTML = score
+startmodalEl.style.visibility = 'hidden'
 animate()
 spawnEnemies()
+}
+
+buttonEl.addEventListener('click', () =>{
+    startGame()
+
+})
+
+startbuttonEl.addEventListener('click', () => {
+    startGame();
+    
+})
+
+
     
