@@ -22,6 +22,16 @@ header{
     display: flex;
 }
 
+.head{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
 .engels{
     float: right;
     margin: 5px;
@@ -129,7 +139,6 @@ li:hover{
 
 h1{
     font-size: 250%;
-    justify-content: center;
     margin-left: 45px;
     margin-right: 45px;
     border-bottom: 2px solid rgb(75, 75, 75);
@@ -140,8 +149,6 @@ h1{
     margin-left: 40px;
     margin-right: 40px;
     font-size: 33px;
-    position: absolute;
-    top: 35%;
 }
 
 .informatieKjell{
@@ -174,7 +181,7 @@ h1{
     flex-direction: column;
     background: #D1D3E0;
     margin-right: 1rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .colom2{
@@ -184,7 +191,7 @@ h1{
     background: #D1D3E0;
     margin-left: 1rem;
     margin-right: 1rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .colom3{
@@ -193,7 +200,7 @@ h1{
     flex-direction: column;
     background: #D1D3E0;
     margin-left: 1rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 
@@ -276,7 +283,6 @@ h2{
     font-size: 20px;
     font-family: sans-serif;
     background-size: cover;
-    text-align: center;
     background: #3E3D49;
     background-position: center;
     background-repeat: no-repeat;
