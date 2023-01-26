@@ -66,7 +66,7 @@ nav{
     margin: 0 auto;
 }
 
-ul{
+.headerlist{
     display: flex;
     list-style: none;
     height: 100%;
@@ -140,6 +140,15 @@ h1{
     margin-left: 40px;
     margin-right: 40px;
     font-size: 33px;
+    position: absolute;
+    top: 35%;
+}
+
+.informatieKjell{
+    position: absolute;
+    font-size: 24px;
+    top: 50%;
+    right: 58%;
 }
 
 /* … */
@@ -404,6 +413,7 @@ ul{
 	margin-bottom: 35px;
 	font-weight: 500;
 	position: relative;
+    
 }
 .footer-col h4::before{
 	content: '';
@@ -413,7 +423,7 @@ ul{
 	background-color: #e91e63;
 	height: 2px;
 	box-sizing: border-box;
-	width: 50px;
+	width: 80px;
 }
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
@@ -428,6 +438,7 @@ ul{
 	display: block;
 	transition: all 0.3s ease;
 }
+
 .footer-col ul li a:hover{
 	color: #ffffff;
 	padding-left: 8px;
