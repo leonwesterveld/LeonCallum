@@ -173,35 +173,17 @@ h1{
     width: 100%;
     height: auto;
     display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
 }
 
-.colom1{
-    width: 100%;
+.colom{
     height: auto;
     flex-direction: column;
     background: #D1D3E0;
-    margin-right: 1rem;
     padding: 2rem;
 }
 
-.colom2{
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    background: #D1D3E0;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding: 2rem;
-}
-
-.colom3{
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    background: #D1D3E0;
-    margin-left: 1rem;
-    padding: 2rem;
-}
 
 
 .image2{
@@ -283,17 +265,28 @@ h2{
     font-size: 20px;
     font-family: sans-serif;
     background-size: cover;
-    background: #3E3D49;
+    text-align: center;
+    background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url(https://i.pinimg.com/564x/9b/bc/90/9bbc902053250e7a86d17902ba65ab4e.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
 #tickets{
     height: auto;
     width: 100%;
-    padding: 3rem;
 }
+    
+#GSectionleft{
+    margin-top: 3rem;
+    width: 30vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    background: #D1D3E0;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 10vw;
+    }
 /* … */
 
 
