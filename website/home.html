@@ -96,6 +96,7 @@
                     font-family: sans-serif;
                 }
             </style>
+        
             <div 
             style="
             position: absolute; 
@@ -110,10 +111,10 @@
             <div id="modalEl"
             style="
             
-            display: none;
+            visibility: hidden;
             position: absolute; 
             background-color: white; 
-            top: 50%;
+            top: 250%;
             transform: translate(-50%,-50%);
             left: 50%;
             padding: 16px;
@@ -125,8 +126,48 @@
                 <label style="font-size:14px;color: gray;">game over</label>
                 <h1 id="modalScoreEl" style="font-size: 48px; margin-bottom:0 ; margin-top: 8px;">0</h1>
                 <p style="margin: 0; font-size:14px ; color: gray;">points</p>
+                <button 
+                id="buttonEl"
+                style="margin-top: 12px;
+                cursor: pointer;
+                ">Restart game</button>
             </div>
-            <canvas id="canvasid"></canvas>
+        
+            <div 
+            style="
+            position: absolute; 
+            color: white; 
+            padding: 8px; 
+            font-size: 14px;
+            user-select: none;
+            " >
+                
+            </div>
+        
+            <div id="startmodalEl"
+            style="
+            
+            visibility: visible;
+            position: absolute; 
+            background-color: white; 
+            top: 250%;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            padding: 16px;
+            max-width:500px ;
+            width: 	100%;
+            text-align: center;
+            border-radius: 5px;
+            ">
+                
+                <h1 id="modalScoreEl" style="font-size: 48px; margin-bottom:0 ; margin-top: 8px;">base defense game</h1>
+                <button 
+                id="startbuttonEl"
+                style="margin-top: 12px;
+                cursor: pointer;
+                ">start</button>
+            </div> 
+            <canvas id="canvasid" style="background: black;"></canvas>
             
                 
             </script>
