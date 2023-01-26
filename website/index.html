@@ -12,7 +12,7 @@
     <header id="header">
         <img class="logo" src="img/logo.jpg" alt="">
         <nav>
-            <ul>
+            <ul class="headerlist">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Tickets.html">Tickets</a></li>
                 <li><a href="Geschiedenis.html">Geschiedenis</a></li>
@@ -110,11 +110,10 @@
         
             <div id="modalEl"
             style="
-            
-            display: none;
+            visibility: hidden;
             position: absolute; 
             background-color: white; 
-            top: 50%;
+            top: 250%;
             transform: translate(-50%,-50%);
             left: 50%;
             padding: 16px;
@@ -122,6 +121,7 @@
             width: 	100%;
             text-align: center;
             border-radius: 5px;
+
             ">
                 <label style="font-size:14px;color: gray;">game over</label>
                 <h1 id="modalScoreEl" style="font-size: 48px; margin-bottom:0 ; margin-top: 8px;">0</h1>
@@ -143,9 +143,13 @@
                     <h4>company</h4>
                     <ul>
                         <li><a href="#">about us</a></li>
+                        <br>
                         <li><a href="#">our services</a></li>
+                        <br>
                         <li><a href="#">privacy policy</a></li>
+                        <br>
                         <li><a href="#">affiliate program</a></li>
+                        <br>
                     </ul>
                 </div>
                 <div class="footer-col">

@@ -173,8 +173,11 @@ function animate(){
 
         const dist = Math.hypot(player.x - enemy.x,
             player.y - enemy.y)
-            if (dist - enemy.radius - player.radius < 1)
+            if (dist - enemy.radius - player.radius < 1){
             cancelAnimationFrame(animationId)
+            modalEl.style.visibility = 'visible'
+            modalScoreEl.innerHTML = score
+        }
             
 
         projectiles.forEach((projectile, projectileIndex) => {
@@ -225,8 +228,8 @@ addEventListener('click', (event) =>
 {   
     
     const angle = Math.atan2(event.
-        clientY - canvas.height / 2,
-        event.clientX - canvas.width / 2
+        offsetY - canvas.height / 2,
+        event.offsetX - canvas.width / 2
 )
     const velocity = {
         x: Math.cos(angle) * 5, 
