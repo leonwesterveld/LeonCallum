@@ -266,7 +266,7 @@ h2{
     font-family: sans-serif;
     background-size: cover;
     text-align: center;
-    background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url(https://i.pinimg.com/564x/9b/bc/90/9bbc902053250e7a86d17902ba65ab4e.jpg);
+    background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url(https://nl.letsgodigital.org/uploads/2018/06/nationaal-videogame-museum-1024x676.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -276,16 +276,16 @@ h2{
     width: 100%;
 }
     
-#GSectionleft{
+#tsection{
     margin-top: 3rem;
     width: 30vw;
-    height: 20vw;
+    height: 120vw;
     display: flex;
     justify-content: center;
-    background: #D1D3E0;
+    background: linear-gradient(rgba(233, 233, 233, 0.699), rgba(233, 233, 233, 0.699) );
     padding: 2rem;
     margin-bottom: 3rem;
-    margin-left: 10vw;
+    margin-left: 20vw;
     }
 /* … */
 
@@ -318,7 +318,7 @@ h2{
     height: 20vw;
     display: flex;
     justify-content: center;
-    background: #D1D3E0;
+    background: linear-gradient(rgba(233, 233, 233, 0.699), rgba(233, 233, 233, 0.699) );
     padding: 2rem;
     margin-bottom: 3rem;
     margin-left: 10vw;
@@ -329,7 +329,7 @@ h2{
     height: 20vw;
     display: flex;
     justify-content: center;
-    background: #D1D3E0;
+    background: linear-gradient(rgba(233, 233, 233, 0.699), rgba(233, 233, 233, 0.699) );
     padding: 2rem;
     margin-bottom: 3rem;
     margin-left: 60vw;
@@ -341,7 +341,7 @@ h2{
     height: 20vw;
     display: flex;
     justify-content: center;
-    background: #D1D3E0;
+    background: linear-gradient(rgba(233, 233, 233, 0.699), rgba(233, 233, 233, 0.699) );
     padding: 2rem;
     margin-bottom: 3rem;
     margin-left: 10vw;
