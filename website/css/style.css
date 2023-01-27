@@ -125,7 +125,9 @@ li:hover{
     background: #D1D3E0;
     padding: 2rem;
     margin-bottom: 3rem;
+    text-align: left;
 }
+
 
 #img1{
     height: auto;
@@ -179,6 +181,7 @@ h1{
     column-count: 3;
     display: flex;
     gap: 3rem;
+    text-align: left;
 }
 
 .colom1{
@@ -186,21 +189,24 @@ h1{
     width: 100%;
     flex-direction: column;
     background: #D1D3E0;
-    padding: 3rem;
+    padding: 2rem;
+    text-align: left;
 }
 .colom2{
     height: auto;
     width: 100%;
     flex-direction: column;
     background: #D1D3E0;
-    padding: 3rem;
+    padding: 2rem;
+    text-align: left;
 }
 .colom3{
     height: auto;
     width: 100%;
     flex-direction: column;
     background: #D1D3E0;
-    padding: 3rem;
+    padding: 2rem;
+    text-align: left;
 }
 
 
@@ -211,7 +217,7 @@ h1{
 }
 
 h2{
-    font-size: 200%;
+    font-size: 150%;
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
