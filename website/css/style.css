@@ -127,13 +127,15 @@ li:hover{
     margin-bottom: 3rem;
 }
 
-#img2{
+#img1{
     height: auto;
     width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .image1{
-    height: 343px;
+    height: 25vw;
     width: auto;
 }
 
@@ -142,6 +144,8 @@ h1{
     margin-left: 45px;
     margin-right: 45px;
     border-bottom: 2px solid rgb(75, 75, 75);
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .informatie{
@@ -172,16 +176,31 @@ h1{
 #section2{
     width: 100%;
     height: auto;
+    column-count: 3;
     display: flex;
     gap: 3rem;
-    flex-wrap: wrap;
 }
 
-.colom{
+.colom1{
     height: auto;
+    width: 100%;
     flex-direction: column;
     background: #D1D3E0;
-    padding: 2rem;
+    padding: 3rem;
+}
+.colom2{
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    background: #D1D3E0;
+    padding: 3rem;
+}
+.colom3{
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    background: #D1D3E0;
+    padding: 3rem;
 }
 
 
@@ -236,6 +255,7 @@ h2{
     width: 600px;
     height: 1400px;
     background: rgba(255, 255, 255, 0.8);
+    margin-right: 10vw;
 
 }
 
@@ -347,14 +367,24 @@ h2{
 #tsection{
     margin-top: 3rem;
     width: 30vw;
-    height: 120vw;
+    height: 160vh;
     display: flex;
     justify-content: center;
     background: linear-gradient(rgba(233, 233, 233, 0.699), rgba(233, 233, 233, 0.699) );
     padding: 2rem;
     margin-bottom: 3rem;
     margin-left: 20vw;
+    text-align: left;
     }
+
+h4{
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(75, 75, 75);
+    }
+
 /* … */
 
 
