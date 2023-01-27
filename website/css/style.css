@@ -383,7 +383,7 @@ h2{
 #GSectionleft{
     margin-top: 3rem;
     width: 30vw;
-    height: 20vw;
+    height: 30vw;
     display: flex;
     justify-content: center;
     background: linear-gradient(rgba(233, 233, 233, 0.699), rgba(233, 233, 233, 0.699) );
@@ -394,7 +394,7 @@ h2{
 
 #GSectionright{
     width: 30vw;
-    height: 20vw;
+    height: 30vw;
     display: flex;
     justify-content: center;
     background: linear-gradient(rgba(233, 233, 233, 0.699), rgba(233, 233, 233, 0.699) );
@@ -406,7 +406,7 @@ h2{
 
 #GSection5{
     width: 30vw;
-    height: 20vw;
+    height: 30vw;
     display: flex;
     justify-content: center;
     background: linear-gradient(rgba(233, 233, 233, 0.699), rgba(233, 233, 233, 0.699) );
